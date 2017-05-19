@@ -21,9 +21,10 @@ public class FromServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password"); // getParameter() 이것말고는 받는 방법이 없다.
 		String gender = request.getParameter("gender");
+		String birth = request.getParameter("birth-year");
 		String[] hobbies = request.getParameterValues("hobbies"); //여러개의 파라미터가 넘어 올때.
 		String selfintro = request.getParameter("self-intro");
-
+		
 		System.out.println( selfintro );
 
 		PrintWriter out = response.getWriter();
@@ -33,6 +34,8 @@ public class FromServlet extends HttpServlet {
 		out.println(password);
 		out.println("<br>");
 		out.println(gender);
+		out.println("<br>");
+		out.println(birth);
 		out.println("<br>");
 		if(hobbies != null){
 			for(String hobby : hobbies){

@@ -22,7 +22,19 @@ pageEncoding="UTF-8"%>
 	 	여<input type="radio" name="gender" value="female">
 	 	<br/>	<!-- 이런게 인라인 태그 -->
 		<br/>
-		취미:
+		생년
+		<br/>
+		<select name ="birth-year">
+			<option value ="2010">2010</option>
+			<option value ="2009">2009</option>
+			<option value ="2008" >2008</option>
+			<option value ="2007">2007</option>
+			<option value ="2006" selected>2006</option>			
+		</select>
+		<br/>
+		<br/>
+		취미:			
+	
 		<br/>
 		독서<input type="checkbox" name="hobbies" value="reading">   <!-- 이것들은 배열로 넘어 간다. -->
 		수영<input type="checkbox" name="hobbies" value="swimming">
